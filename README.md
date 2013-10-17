@@ -42,11 +42,27 @@ export PATH=$PATH:~/.local/bin
 To get started, run the tool with your username/email and password:
 
 ```
-$ vodafone-scraper --user=me@myemail.com "--password=password123"
+$ vodafone-scraper show "--auth=me@myemail.com:password123"
+```
+
+You can choose to only output when a warning condition is met, for example
+you've used over 250 minutes:
+
+```
+$ vodafone-scraper alert --minutes=250
+```
+
+Rather than using ``--auth`` you can store ``VODAFONE_USERNAME`` and
+``VODAFONE_PASSWORD`` in your environment:
+
+```
+export VODAFONE_USERNAME="me@myemail.com"
+export VODAFONE_PASSWORD="<my password"
+$ vodafone-scraper show
 ```
 
 # Running Headless (without a GUI)
 
-You could use Xvfb to load the Firefox process in a fake X session. See the 
+You could use ``Xvfb`` to load the Firefox process in a fake X session. See the 
 ``examples/`` directory for a sample shell script and crontab file to achieve
 this.

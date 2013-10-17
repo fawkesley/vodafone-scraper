@@ -44,3 +44,9 @@ To get started, run the tool with your username/email and password:
 ```
 $ vodafone-scraper --user=me@myemail.com "--password=password123"
 ```
+
+# Running Headless (without a GUI)
+
+You could use Xvfb to load the Firefox process in a fake X session. See the 
+``examples/`` directory for a sample shell script and crontab file to achieve
+this.

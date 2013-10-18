@@ -1,3 +1,6 @@
-venv
+venv/*
 *.pyc
 AUTH
+*.egg-info
+build/*
+dist/*

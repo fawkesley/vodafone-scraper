@@ -30,7 +30,7 @@ setup(
     include_package_data=False,
     zip_safe=False,
     install_requires=[
-        'selenium==2.42.1',
+        'selenium==2.43.0',
         'docopt>=0.6.1',
         'lxml>=3.2.0'
     ],
